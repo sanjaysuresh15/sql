@@ -117,5 +117,15 @@ select dept_emt.emp_no,
 	dept_emt.emp_no = employees.emp_no
 	where dept_name = 'Sales';
 	
-
+select dept_emt.emp_no,
+	departments.dept_name,
+	employees.last_name,
+	employees.first_name
+	from dept_emt
+	full join departments on 
+	dept_emt.dept_no = departments.dept_no
+	full join employees on
+	dept_emt.emp_no = employees.emp_no
+	where dept_name = 'Sales' or dept_name = 'Development';
+	
 	
