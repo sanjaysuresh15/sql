@@ -108,7 +108,7 @@ select dept_emt.emp_no,
 --question 5
 select * 
 	from employees 
-	where first_name = 'Hercules' and last_name like 'B%'
+	where first_name = 'Hercules' and last_name like 'B%';
 
 --question 6
 select dept_emt.emp_no,
