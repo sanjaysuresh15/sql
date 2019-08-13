@@ -102,4 +102,7 @@ select dept_emt.emp_no,
 	full join employees on
 	dept_emt.emp_no = employees.emp_no;
 
+select * 
+	from employees 
+	where first_name = 'Hercules' and last_name like 'B%'
 
