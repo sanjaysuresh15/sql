@@ -82,7 +82,6 @@ select dept_manager.dept_no,
 	dept_manager.emp_no,
 	dept_manager.from_date,
 	dept_manager.to_date,
-	departments.dept_no,
 	departments.dept_name,
 	employees.first_name,
 	employees.last_name
@@ -93,5 +92,14 @@ select dept_manager.dept_no,
 	dept_manager.emp_no = employees.emp_no;
 	
 
+select dept_emt.emp_no,
+	departments.dept_name,
+	employees.last_name,
+	employees.first_name
+	from dept_emt
+	full join departments on 
+	dept_emt.dept_no = departments.dept_no
+	full join employees on
+	dept_emt.emp_no = employees.emp_no;
 
-	
+
